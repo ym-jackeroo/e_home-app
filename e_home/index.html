@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, 
+    maximum-scale=1.0, user-scalable=no">
+    <title>e_home</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+  </body>
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=qyjEwp4BiwNNVSInefdh9SEL6n4qsDfg"></script>
+  <script>
+    function resizeWindow() {
+      let deviceWidth = document.documentElement.clientWidth
+      let rootRem = deviceWidth / 7.5 + 'px'
+      document.documentElement.style.fontSize = rootRem
+    }
+    resizeWindow()
+    window.onresize = resizeWindow()
+  </script>
+</html>
+
